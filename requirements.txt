@@ -1,0 +1,17 @@
+
+
+# --- Core Python libraries ---
+numpy==1.23.5
+pyyaml==6.0
+tqdm==4.64.1
+
+# --- Computer Vision & Plotting ---
+opencv-python==4.6.0.66
+matplotlib==3.6.2
+
+# --- YOLOv8 (Ultralytics) ---
+ultralytics==8.0.60
+
+# --- PaddleOCR ---
+paddlepaddle==2.5.2       # CPU version, adjust if you need GPU version
+paddleocr==2.6.1.3

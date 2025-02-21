@@ -28,7 +28,7 @@ This project demonstrates **Chinese license plate detection and recognition** us
 | ├─ `train/`, `val/`, `test/`| YOLO images & labels (CCPD or custom dataset)                              |
 | ├─ `cropped_plates/`         | Cropped plate images after YOLO detection                                 |
 | └─ `ground_truth.json`       | Mapping: `{ "cropped_img.jpg": "plate_text" }`                            |
-| `visualisation`     | Place sample detection/OCR images for demonstration in the README         |
+| `visualisation`     | Evaluation  plots & sample detection/OCR images        |
 | `src/`                   | Core scripts for YOLO training, detection, OCR, and evaluation            |
 | ├─ `train_yolo.py`           | Train YOLO from scratch                                                   |
 | ├─ `train_yolo_fine_tune.py` | Fine-tune YOLO on CCPD                                                     |

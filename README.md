@@ -38,6 +38,7 @@
 | ├─ `crop_plates.py`          | Crop detected plate regions                                               |
 | ├─ `ocr_paddle.py`           | PaddleOCR text recognition on cropped plates                              |
 | └─ `evaluate_ocr.py`         | Compare OCR results vs. ground truth (char-level & full-plate accuracy)   |
+| `Lincence Plate Recognition.ipynb`                  | Project documentation (this file)                                         |
 | `requirements.txt`           | Python dependencies                                                       |
 | `README.md`                  | Project documentation (this file)                                         |
 

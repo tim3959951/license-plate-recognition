@@ -18,29 +18,7 @@
 | **Accuracy Metrics** | mAP, Precision, Recall, Character Accuracy |
 | **Dataset Used** | CCPD (or custom dataset) |
 
----
 
-## 📂 Project Structure
-
-
-| File/Folder                  | Description                                                               |
-|------------------------------|---------------------------------------------------------------------------|
-| `data/`                      | Contains training, validation, test sets, and cropped plate images        |
-| ├─ `train/`, `val/`, `test/`| YOLO images & labels (CCPD or custom dataset)                              |
-| ├─ `cropped_plates/`         | Cropped plate images after YOLO detection                                 |
-| └─ `ground_truth.json`       | Mapping: `{ "cropped_img.jpg": "plate_text" }`                            |
-| `visualisation`     | Evaluation  plots & sample detection/OCR images        |
-| `src/`                   | Core scripts for YOLO training, detection, OCR, and evaluation            |
-| ├─ `train_yolo.py`           | Train YOLO from scratch                                                   |
-| ├─ `train_yolo_fine_tune.py` | Fine-tune YOLO on CCPD                                                     |
-| ├─ `evaluate_yolo.py`        | Evaluate YOLO detection (mAP, precision, recall)                          |
-| ├─ `detect_yolo.py`          | Run YOLO detection on new images                                          |
-| ├─ `crop_plates.py`          | Crop detected plate regions                                               |
-| ├─ `ocr_paddle.py`           | PaddleOCR text recognition on cropped plates                              |
-| └─ `evaluate_ocr.py`         | Compare OCR results vs. ground truth (char-level & full-plate accuracy)   |
-| `Lincence Plate Recognition.ipynb`                  | Project documentation (this file)                                         |
-| `requirements.txt`           | Python dependencies                                                       |
-| `README.md`                  | Project documentation (this file)                                         |
 
 ---
 ## 📊 YOLO Detection Results
@@ -117,7 +95,34 @@
 🔹 **Post-Processing Rules** – Enforce regex/whitelist filtering for valid plate formats.  
 🔹 **Edge Deployment** – Optimize for **Raspberry Pi / Jetson Nano** for real-time use.  
 
+
+
+
 ---
+
+## 📂 Project Structure
+
+
+| File/Folder                  | Description                                                               |
+|------------------------------|---------------------------------------------------------------------------|
+| `data/`                      | Contains training, validation, test sets, and cropped plate images        |
+| ├─ `train/`, `val/`, `test/`| YOLO images & labels (CCPD or custom dataset)                              |
+| ├─ `cropped_plates/`         | Cropped plate images after YOLO detection                                 |
+| └─ `ground_truth.json`       | Mapping: `{ "cropped_img.jpg": "plate_text" }`                            |
+| `visualisation`     | Evaluation  plots & sample detection/OCR images        |
+| `src/`                   | Core scripts for YOLO training, detection, OCR, and evaluation            |
+| ├─ `train_yolo.py`           | Train YOLO from scratch                                                   |
+| ├─ `train_yolo_fine_tune.py` | Fine-tune YOLO on CCPD                                                     |
+| ├─ `evaluate_yolo.py`        | Evaluate YOLO detection (mAP, precision, recall)                          |
+| ├─ `detect_yolo.py`          | Run YOLO detection on new images                                          |
+| ├─ `crop_plates.py`          | Crop detected plate regions                                               |
+| ├─ `ocr_paddle.py`           | PaddleOCR text recognition on cropped plates                              |
+| └─ `evaluate_ocr.py`         | Compare OCR results vs. ground truth (char-level & full-plate accuracy)   |
+| `Lincence Plate Recognition.ipynb`                  | Full training pipeline notebook                                     |
+| `requirements.txt`           | Python dependencies                                                       |
+| `README.md`                  | Project documentation (this file)                                         |
+---
+
 
 ## 📖 References
 

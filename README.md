@@ -73,9 +73,9 @@
 
 | **Original Image** | **OCR Result** | **Ground Truth** | **Correct?** |
 |--------------------|---------------|------------------|--------------|
-| ![plate1](visualisation/plate1.jpg) | 京A12345 | 京A12345 | ✅ |
-| ![plate2](visualisation/plate2.jpg) | 沪B67990 | 沪B67890 | ❌ |
-| ![plate3](visualisation/plate3.jpg) | 粤C88888 | 粤C88888 | ✅ |
+| ![plate1](visualisation/plate1.jpg) | 皖AYR773 | 皖AYR773 | ✅ |
+| ![plate2](visualisation/plate2.jpg) | 皖A406B7 | 皖A406B7 | ✅ |
+| ![plate3](visualisation/plate3.jpg) | AZ7711  | 皖AZ7711 | ❌ |
 
 🚀 **OCR Mistakes:**  
 ![OCR Errors](visualisation/ocr_results.jpg)  

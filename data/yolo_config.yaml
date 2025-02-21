@@ -1,0 +1,7 @@
+path: "/Users/tim/Desktop/self-learning/Licence Plate Recognition/CCPD_YOLO"
+train: train/images # train folder
+val: val/images  # val folder
+test: test/images  # test folder
+
+nc: 1  # number of classes
+names: ["license_plate"] # class name

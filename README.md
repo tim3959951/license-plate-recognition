@@ -47,24 +47,25 @@
 🔥 **Example Detection:**  
 ![YOLO Detection](visualisation/val_batch0_pred.jpg)  
 
-🚀 **Confusion Matrix:**  
-![Confusion Matrix](visualisation/confusion_matrix.png)  
+|                                                                                              |                                                                                                 |
+|:--------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------:|
+| ![Confusion Matrix](visualisation/confusion_matrix.png)<br>🚀 **Confusion Matrix**            | ![PR Curve](visualisation/PR_curve.png)<br>📈 **Precision-Recall Curve**                        |
+| ![F1 Score](visualisation/F1_curve.png)<br>📉 **F1 Score Curve**                              | ![P Curve](visualisation/P_curve.png)<br>📌 **P-curve (Precision over training epochs)**        |
+| ![R Curve](visualisation/R_curve.png)<br>📌 **R-curve (Recall over training epochs)**         | ![Normalized Confusion Matrix](visualisation/confusion_matrix_normalized.png)<br>📌 **Normalized Confusion Matrix** |
 
-📈 **Precision-Recall Curve:**  
-![PR Curve](visualisation/PR_curve.png)  
+  
+---
+## YOLO Detection Performance (on test data)
 
-📉 **F1 Score Curve:**  
-![F1 Score](visualisation/F1_curve.png)  
+| Metric    | Score   |
+|-----------|---------|
+| mAP@0.5   | 99.5%   |
+| Precision | 99.98%  |
+| Recall    | 100%    |
 
-📌 **P-curve (Precision over training epochs)**  
-![P Curve](visualisation/P_curve.png)  
-
-📌 **R-curve (Recall over training epochs)**  
-![R Curve](visualisation/R_curve.png)  
-
-📌 **Normalized Confusion Matrix**  
-![Normalized Confusion Matrix](visualisation/confusion_matrix_normalized.png)  
-
+- ✅ **YOLO achieves near-perfect mAP (99.5%)** for license plate detection.  
+- ✅ **Extremely high precision (99.98%)** ensures minimal false positives.  
+- ✅ **Perfect recall (100%)** indicates the model detects all plates correctly.
 ---
 
 ## 🔠 OCR Performance & Evaluation
@@ -77,8 +78,6 @@
 | ![plate2](visualisation/plate2.jpg) | 皖A406B7 | 皖A406B7 | ✅ |
 | ![plate3](visualisation/plate3.jpg) | AZ7711  | 皖AZ7711 | ❌ |
 
-🚀 **OCR Mistakes:**  
-![OCR Errors](visualisation/ocr_results.jpg)  
 
 ---
 ## 🆚 OCR Performance Comparison
@@ -90,9 +89,10 @@
 | **Easy OCR**   | **81.43%**            | **67.98%**              |
 
 📌 **Key Findings:**  
-1️⃣ **PaddleOCR significantly outperforms Easy OCR** in recognizing Chinese license plates.  
-2️⃣ **Easy OCR struggles with small fonts, distortion, and non-English characters.**  
-3️⃣ **Post-processing techniques (regex filtering, language models) could further refine PaddleOCR accuracy.**  
+- **PaddleOCR significantly outperforms Easy OCR** in recognizing Chinese license plates.  
+- **Easy OCR struggles with small fonts, distortion, and non-English characters.**
+- **Post-processing techniques (regex filtering, language models) could further refine PaddleOCR accuracy.**
+---
 
 ## 🔥 Key Takeaways
 

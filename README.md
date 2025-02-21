@@ -1,6 +1,6 @@
 # 🏷️ CCPD License Plate Recognition (YOLO + PaddleOCR)
 
-This project demonstrates **Chinese license plate detection and recognition** using the [CCPD dataset](https://github.com/detectRecog/CCPD) (or a similar dataset). It combines **YOLOv8** for plate detection and **PaddleOCR** for text recognition. The pipeline focuses on **end-to-end efficiency**, from training and detection to OCR evaluation.
+This project demonstrates **license plate detection and recognition** using the [CCPD dataset](https://github.com/detectRecog/CCPD) (or a similar dataset). It combines **YOLOv8** for plate detection and **PaddleOCR** for text recognition. The pipeline focuses on **end-to-end efficiency**, from training and detection to OCR evaluation.
 
 ---
 

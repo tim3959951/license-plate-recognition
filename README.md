@@ -87,11 +87,11 @@
 | **OCR Engine**       | **Character Accuracy** | **Full Plate Accuracy** |
 |----------------------|----------------------|-------------------------|
 | **PaddleOCR**       | **94.75%**            | **93.26%**              |
-| **Tesseract OCR**   | **81.43%**            | **67.98%**              |
+| **Easy OCR**   | **81.43%**            | **67.98%**              |
 
 📌 **Key Findings:**  
-1️⃣ **PaddleOCR significantly outperforms Tesseract** in recognizing Chinese license plates.  
-2️⃣ **Tesseract struggles with small fonts, distortion, and non-English characters.**  
+1️⃣ **PaddleOCR significantly outperforms Easy OCR** in recognizing Chinese license plates.  
+2️⃣ **Easy OCR struggles with small fonts, distortion, and non-English characters.**  
 3️⃣ **Post-processing techniques (regex filtering, language models) could further refine PaddleOCR accuracy.**  
 
 ## 🔥 Key Takeaways

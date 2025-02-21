@@ -32,7 +32,24 @@
 | ![F1 Score](visualisation/F1_curve.png)<br>📉 **F1 Score Curve**                              | ![P Curve](visualisation/P_curve.png)<br>📌 **P-curve (Precision over training epochs)**        |
 | ![R Curve](visualisation/R_curve.png)<br>📌 **R-curve (Recall over training epochs)**         | ![Normalized Confusion Matrix](visualisation/confusion_matrix_normalized.png)<br>📌 **Normalized Confusion Matrix** |
 
-  
+- **Confusion Matrix**  
+  Shows how predicted classes match actual classes. Ideally, the diagonal dominates, indicating correct classification.
+
+- **Precision-Recall Curve**  
+  Demonstrates the trade-off between precision (low false positives) and recall (low false negatives) at various thresholds.
+
+- **F1 Score Curve**  
+  Combines precision and recall into a single measure. A higher F1 implies a good balance between the two.
+
+- **P-curve (Precision over training epochs)**  
+  Reveals how the model’s precision evolves as training progresses, indicating its ability to avoid false positives.
+
+- **R-curve (Recall over training epochs)**  
+  Tracks recall improvement or stability, reflecting the model’s ability to detect all true instances.
+
+- **Normalized Confusion Matrix**  
+  Each row is normalized to sum to 1.0, highlighting the proportion of correct vs. misclassified predictions per class.
+
 ---
 ## YOLO Detection Performance (on test data)
 

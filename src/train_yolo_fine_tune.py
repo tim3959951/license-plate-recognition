@@ -8,7 +8,7 @@ from ultralytics import YOLO
 
 def main():
     # Example: fine-tuning with advanced hyperparameters
-    model = YOLO("yolov8n.pt")
+    model = YOLO("yolov8m.pt")
     
     # Potential advanced hyperparams, e.g., freeze, custom LR
     model.train(

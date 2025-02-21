@@ -8,7 +8,7 @@ from ultralytics import YOLO
 
 def main():
     # Example: training from scratch using yolov8n
-    model = YOLO("yolov8n.pt")  # or "yolov8s.pt", etc.
+    model = YOLO("yolov8m.pt")  # or "yolov8s.pt", etc.
     model.train(
         data="data/ccpd_yolo.yaml",  # your YOLO data config
         epochs=50,
